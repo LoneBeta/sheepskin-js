@@ -68,4 +68,3 @@ class Sheepskin {
         return headerHtml;
     }
 }
-export default Sheepskin

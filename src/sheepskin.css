@@ -1,0 +1,132 @@
+.Calendar {
+	width: 100%;
+	background-color: #999;
+  	flex-direction: column;
+	flex: 1;
+}
+
+/*.Calendar--items {
+	min-height: 100%;
+	display: flex;
+}
+
+.Calendar--items .item {
+	border: 1px solid #111;
+	flex: 1;
+}
+
+
+.Calendar--heading{
+	display: flex;
+}
+
+.Calendar--heading .item{
+	flex: 1;
+	text-align: center;
+}
+
+.Calendar--heading h3{
+	font-size: 16px;
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 50px auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.grid-container .item {
+	grid-column: 1 / 8;
+	grid-row: 1 / 2;
+	border: 1px solid #111;
+}
+
+.grid-container .header {
+	grid-column: 2 / 8;
+	grid-row: 1 / 2;
+	display: flex;
+ 	justify-content: center;
+}
+
+.grid-container .header .resource{
+	flex: 1;
+	width: auto;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.grid-container .gutter {
+	grid-column: 1 / 1;
+	grid-row: 2 / 10;
+}
+
+.grid-container .body {
+	grid-column: 2 / 8;
+	grid-row: 2 / 10;
+}
+
+.body-container {
+	position: relative;
+}
+
+.body-container .template {
+	display: flex;
+}
+
+
+.body-container .template .resource .thirty-minutes:nth-child(odd) {
+	border-bottom: 1px solid #fafafa;
+}
+
+.body-container .resource {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+	flex: 1;
+}
+
+.body-container .template .resource .thirty-minutes {
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #999;
+}
+
+.body-container .resource .thirty-minutes {
+	flex: 1;
+	align-content: center;
+	justify-content: middle;
+	height: 15px;
+	font-size:9px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+}
+
+.body-container .events {
+	display: flex;
+	width: 1264.94px;
+}
+
+.body-container .events {
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.gutter-container .hours{
+	display: flex;
+    flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.gutter-container .hours .one-hour {
+	flex: 1;
+	height: 21px;
+	font-size:9px;
+	text-align: center;
+	padding-top: 10px;
+	border-bottom: 1px solid #dedede;
+}
